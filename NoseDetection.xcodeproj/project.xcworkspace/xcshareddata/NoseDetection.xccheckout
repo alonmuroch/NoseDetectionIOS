@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>69BF602F-8D81-4B3D-BEA6-700EE8DBB1D2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>NoseDetection</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8F0F0A0D-054B-42BF-A025-F1073AFC076F</key>
+		<string>https://github.com/negedzuregal/NoseDetectionIOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>NoseDetection.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8F0F0A0D-054B-42BF-A025-F1073AFC076F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/negedzuregal/NoseDetectionIOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8F0F0A0D-054B-42BF-A025-F1073AFC076F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8F0F0A0D-054B-42BF-A025-F1073AFC076F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>NoseDetection</string>
+		</dict>
+	</array>
+</dict>
+</plist>

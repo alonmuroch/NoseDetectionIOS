@@ -10,73 +10,41 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NoseDetection/MainViewController.mm"
-            timestampString = "416163264.038131"
+            timestampString = "416174815.39039"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "152"
-            endingLineNumber = "152"
-            landmarkName = "-detectFaces"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "NoseDetection/MainViewController.mm"
-            timestampString = "416163264.038131"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "151"
-            endingLineNumber = "151"
-            landmarkName = "-detectFaces"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "NoseDetection/MainViewController.mm"
-            timestampString = "416163264.038131"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
-            landmarkName = "-addFootbalOnNose:"
+            startingLineNumber = "166"
+            endingLineNumber = "166"
+            landmarkName = "-initWithNibName:bundle:"
             landmarkType = "5">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "-[MainViewController addFootbalOnNose:]"
+                  symbolName = "-[MainViewController initWithNibName:bundle:]"
                   moduleName = "NoseDetection"
                   urlString = "file:///Users/alon/Documents/Xcode%20Projects/NoseDetection/NoseDetection/MainViewController.mm"
-                  timestampString = "416089909.489146"
+                  timestampString = "416174853.166201"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "97"
-                  endingLineNumber = "97"
-                  offsetFromSymbolStart = "165">
+                  startingLineNumber = "166"
+                  endingLineNumber = "166"
+                  offsetFromSymbolStart = "86">
                </Location>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "-[MainViewController addFootbalOnNose:]"
+                  symbolName = "-[MainViewController initWithNibName:bundle:]"
                   moduleName = "NoseDetection"
                   urlString = "file:///Users/alon/Documents/Xcode%20Projects/NoseDetection/NoseDetection/MainViewController.mm"
-                  timestampString = "416089909.489575"
+                  timestampString = "416174853.168752"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "97"
-                  endingLineNumber = "97"
-                  offsetFromSymbolStart = "451">
+                  startingLineNumber = "166"
+                  endingLineNumber = "166"
+                  offsetFromSymbolStart = "202">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -88,28 +56,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NoseDetection/MainViewController.mm"
-            timestampString = "416163264.038131"
+            timestampString = "416174834.619932"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
-            landmarkName = "-CGRectFromCvRectForFootbal:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "NoseDetection/MainViewController.mm"
-            timestampString = "416162926.212083"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "-CreateIplImageFromUIImage:"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
+            landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

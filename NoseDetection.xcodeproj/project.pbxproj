@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DF1C4D6718CCF8BE009409D0 /* MainViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF1C4D6018CCF8BE009409D0 /* MainViewController.mm */; };
 		DF1C4D6818CCF8BE009409D0 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF1C4D6118CCF8BE009409D0 /* MainViewController.xib */; };
+		DF87386018CE53FF00175062 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF87385F18CE53FF00175062 /* opencv2.framework */; };
 		DF9A8EE118CE26F800073848 /* football_PNG1085.png in Resources */ = {isa = PBXBuildFile; fileRef = DF9A8EDC18CE26F800073848 /* football_PNG1085.png */; };
 		DF9A8EE218CE26F800073848 /* p1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF9A8EDD18CE26F800073848 /* p1.jpg */; };
 		DF9A8EE318CE26F800073848 /* p2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF9A8EDE18CE26F800073848 /* p2.jpg */; };
@@ -22,13 +23,11 @@
 		DF9BECB718CCF21900A74075 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF9BECB518CCF21900A74075 /* InfoPlist.strings */; };
 		DF9BECB918CCF21900A74075 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9BECB818CCF21900A74075 /* main.m */; };
 		DF9BECBD18CCF21900A74075 /* AMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9BECBC18CCF21900A74075 /* AMAppDelegate.m */; };
-		DF9BECC518CCF21900A74075 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF9BECC418CCF21900A74075 /* Images.xcassets */; };
 		DF9BECCC18CCF21900A74075 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9BECCB18CCF21900A74075 /* XCTest.framework */; };
 		DF9BECCD18CCF21900A74075 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9BECAC18CCF21900A74075 /* Foundation.framework */; };
 		DF9BECCE18CCF21900A74075 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9BECB018CCF21900A74075 /* UIKit.framework */; };
 		DF9BECD618CCF21900A74075 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF9BECD418CCF21900A74075 /* InfoPlist.strings */; };
 		DF9BECD818CCF21900A74075 /* NoseDetectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9BECD718CCF21900A74075 /* NoseDetectionTests.m */; };
-		DF9BECE218CCF22700A74075 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9BECE118CCF22700A74075 /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +44,7 @@
 		DF1C4D5A18CCF8BE009409D0 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		DF1C4D6018CCF8BE009409D0 /* MainViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MainViewController.mm; sourceTree = "<group>"; };
 		DF1C4D6118CCF8BE009409D0 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		DF87385F18CE53FF00175062 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		DF9A8EDC18CE26F800073848 /* football_PNG1085.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = football_PNG1085.png; sourceTree = "<group>"; };
 		DF9A8EDD18CE26F800073848 /* p1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = p1.jpg; sourceTree = "<group>"; };
 		DF9A8EDE18CE26F800073848 /* p2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = p2.jpg; sourceTree = "<group>"; };
@@ -62,13 +62,11 @@
 		DF9BECBA18CCF21900A74075 /* NoseDetection-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NoseDetection-Prefix.pch"; sourceTree = "<group>"; };
 		DF9BECBB18CCF21900A74075 /* AMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMAppDelegate.h; sourceTree = "<group>"; };
 		DF9BECBC18CCF21900A74075 /* AMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMAppDelegate.m; sourceTree = "<group>"; };
-		DF9BECC418CCF21900A74075 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DF9BECCA18CCF21900A74075 /* NoseDetectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoseDetectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF9BECCB18CCF21900A74075 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		DF9BECD318CCF21900A74075 /* NoseDetectionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NoseDetectionTests-Info.plist"; sourceTree = "<group>"; };
 		DF9BECD518CCF21900A74075 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DF9BECD718CCF21900A74075 /* NoseDetectionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoseDetectionTests.m; sourceTree = "<group>"; };
-		DF9BECE118CCF22700A74075 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +76,7 @@
 			files = (
 				DF9BECAF18CCF21900A74075 /* CoreGraphics.framework in Frameworks */,
 				DF9BECB118CCF21900A74075 /* UIKit.framework in Frameworks */,
-				DF9BECE218CCF22700A74075 /* opencv2.framework in Frameworks */,
+				DF87386018CE53FF00175062 /* opencv2.framework in Frameworks */,
 				DF9BECAD18CCF21900A74075 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,7 +137,7 @@
 		DF9BECAB18CCF21900A74075 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DF9BECE118CCF22700A74075 /* opencv2.framework */,
+				DF87385F18CE53FF00175062 /* opencv2.framework */,
 				DF9BECAC18CCF21900A74075 /* Foundation.framework */,
 				DF9BECAE18CCF21900A74075 /* CoreGraphics.framework */,
 				DF9BECB018CCF21900A74075 /* UIKit.framework */,
@@ -158,7 +156,6 @@
 				DF1C4D6118CCF8BE009409D0 /* MainViewController.xib */,
 				DF9BECBB18CCF21900A74075 /* AMAppDelegate.h */,
 				DF9BECBC18CCF21900A74075 /* AMAppDelegate.m */,
-				DF9BECC418CCF21900A74075 /* Images.xcassets */,
 				DF9BECB318CCF21900A74075 /* Supporting Files */,
 			);
 			path = NoseDetection;
@@ -273,7 +270,6 @@
 				DF9A8EE918CE271C00073848 /* haarcascade_frontalface_alt_tree.xml in Resources */,
 				DF9A8EE518CE26F800073848 /* p4.jpg in Resources */,
 				DF9A8EE318CE26F800073848 /* p2.jpg in Resources */,
-				DF9BECC518CCF21900A74075 /* Images.xcassets in Resources */,
 				DF9BECB718CCF21900A74075 /* InfoPlist.strings in Resources */,
 				DF9A8EE118CE26F800073848 /* football_PNG1085.png in Resources */,
 				DF9A8EEA18CE271C00073848 /* haarcascade_nose.xml in Resources */,
@@ -500,7 +496,7 @@
 				DF9BECDA18CCF21900A74075 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		DF9BECDB18CCF21900A74075 /* Build configuration list for PBXNativeTarget "NoseDetection" */ = {
 			isa = XCConfigurationList;
@@ -509,7 +505,7 @@
 				DF9BECDD18CCF21900A74075 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		DF9BECDE18CCF21900A74075 /* Build configuration list for PBXNativeTarget "NoseDetectionTests" */ = {
 			isa = XCConfigurationList;
@@ -518,7 +514,7 @@
 				DF9BECE018CCF21900A74075 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

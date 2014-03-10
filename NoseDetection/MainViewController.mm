@@ -9,6 +9,9 @@ static CvMemStorage *cvStorage = NULL;
 static CvHaarClassifierCascade *haarCascade = NULL;
 static CvHaarClassifierCascade *haarCascadeNose = NULL;
 
+@interface MainViewController ()
+
+@end
 
 @implementation MainViewController
 @synthesize originalImageView;
@@ -136,7 +139,7 @@ static CvHaarClassifierCascade *haarCascadeNose = NULL;
         CvRect *rect = (CvRect *)cvGetSeqElem(faces, i);
         [self drawOnFaceAt:rect inImage:src color:cvScalar(255,0,0,255)];
         
-        /* Draw noses found in face */
+        // Draw noses found in face
         for (int i=0; i<noses->total; i++) {
             CvRect *rectNose = (CvRect *)cvGetSeqElem(noses, i);
             CvPoint noseCenter = [self getCenterFromRect:rectNose];
@@ -162,11 +165,11 @@ static CvHaarClassifierCascade *haarCascadeNose = NULL;
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"Face Detection", @"Face Detection");
-        self.tabBarItem.image = [UIImage imageNamed:@"second"];
+        
     }
     return self;
 }
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -174,13 +177,12 @@ static CvHaarClassifierCascade *haarCascadeNose = NULL;
 
 #pragma mark - View lifecycle
 
-- (void)viewDidLoad
+-(void)viewDidLoad
 {
     [super viewDidLoad];
     
     baseImage=[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"p4" ofType:@"jpg"]];
     [originalImageView setImage:baseImage];
-    
     
     cvStorage = cvCreateMemStorage(0);
     NSString *resourcePath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:[NSString stringWithUTF8String:HAAR_RESOURCE]];
