@@ -1,20 +1,11 @@
-//
-//  OCFourthViewController.m
-//  OpenCVBasics
-//
-//  Created by Mohit Athwani on 20/10/11.
-//  Copyright (c) 2011 Geeks Incorporated. All rights reserved.
-//
-
 #import "MainViewController.h"
+
 //File name for the Haar Cascade XML file
 static const char *HAAR_RESOURCE = "haarcascade_frontalface_alt_tree.xml";
 static const char *HAAR_RESOURCE_NOSE = "haarcascade_nose.xml";
 
-//Temporary storage for the Haar resource
 static CvMemStorage *cvStorage = NULL;
 
-//Pointer to the Resource
 static CvHaarClassifierCascade *haarCascade = NULL;
 static CvHaarClassifierCascade *haarCascadeNose = NULL;
 
@@ -25,21 +16,23 @@ static CvHaarClassifierCascade *haarCascadeNose = NULL;
 #pragma mark UIImage to IplImage
 - (IplImage *)CreateIplImageFromUIImage:(UIImage *)image {
     CGSize imgViewSize = CGSizeMake(originalImageView.frame.size.width, originalImageView.frame.size.height);
-    // Getting CGImage from UIImage
+    
     CGImageRef imageRef = image.CGImage;
     
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
-    // Creating temporal IplImage for drawing
+    
+    
     IplImage *iplimage = cvCreateImage(
-                                       cvSize(imgViewSize.width,imgViewSize.height), IPL_DEPTH_8U, 4
-                                       );
-    // Creating CGContext for temporal IplImage
+                       cvSize(imgViewSize.width,imgViewSize.height), IPL_DEPTH_8U, 4
+                       );
+    
+    
     CGContextRef contextRef = CGBitmapContextCreate(
-                                                    iplimage->imageData, iplimage->width, iplimage->height,
-                                                    iplimage->depth, iplimage->widthStep,
-                                                    colorSpace, kCGImageAlphaPremultipliedLast|kCGBitmapByteOrderDefault
-                                                    );
-    // Drawing CGImage to CGContext
+                        iplimage->imageData, iplimage->width, iplimage->height,
+                        iplimage->depth, iplimage->widthStep,
+                        colorSpace, kCGImageAlphaPremultipliedLast|kCGBitmapByteOrderDefault
+                        );
+    
     CGContextDrawImage(
                        contextRef,
                        CGRectMake(0, 0, imgViewSize.width, imgViewSize.height),
@@ -52,7 +45,7 @@ static CvHaarClassifierCascade *haarCascadeNose = NULL;
 }
 
 #pragma mark Iplimage to UIImage
-//Convert Image to RGB before calling this
+
 - (UIImage *)UIImageFromIplImage:(IplImage *)image {
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
     // Allocating the buffer for CGImage
@@ -62,11 +55,11 @@ static CvHaarClassifierCascade *haarCascadeNose = NULL;
     CGDataProviderCreateWithCFData((CFDataRef)data);
     // Creating CGImage from chunk of IplImage
     CGImageRef imageRef = CGImageCreate(
-                                        image->width, image->height,
-                                        image->depth, image->depth * image->nChannels, image->widthStep,
-                                        colorSpace, kCGImageAlphaNone|kCGBitmapByteOrderDefault,
-                                        provider, NULL, false, kCGRenderingIntentDefault
-                                        );
+                        image->width, image->height,
+                        image->depth, image->depth * image->nChannels, image->widthStep,
+                        colorSpace, kCGImageAlphaNone|kCGBitmapByteOrderDefault,
+                        provider, NULL, false, kCGRenderingIntentDefault
+                        );
     // Getting UIImage from CGImage
     UIImage *ret = [UIImage imageWithCGImage:imageRef];
     CGImageRelease(imageRef);
@@ -76,9 +69,9 @@ static CvHaarClassifierCascade *haarCascadeNose = NULL;
 }
 
 #pragma mark Face detection
--(void) drawOnFaceAt:(CvRect *)rect inImage:(IplImage *)image color:(CvScalar)colorScalar{
-    
-    //We need points to draw a rectangle
+
+-(void) drawOnFaceAt:(CvRect *)rect inImage:(IplImage *)image color:(CvScalar)colorScalar
+{
     cvRectangle(image, cvPoint(rect->x, rect->y), cvPoint(rect->x+rect->width, rect->y+rect->height), colorScalar,4,8,0);
 }
 
@@ -119,34 +112,32 @@ static CvHaarClassifierCascade *haarCascadeNose = NULL;
     //Clear the memory incase previous faces were detected
     cvClearMemStorage(cvStorage);
     
-    //Detect Faces and get rectangular coordinates
-    CvSeq* faces = cvHaarDetectObjects(src, //Input Image
-                                       haarCascade, // Cascade to be used
-                                       cvStorage, //Temporary storage
-                                       1.1,// Size increase for features at each scan
-                                       2, //Min number of neighbouring rectangle matches
-                                       CV_HAAR_DO_CANNY_PRUNING,//Optimization
-                                       cvSize(100, 100)); // Starting feature size
+    CvSeq* faces = cvHaarDetectObjects(src,
+                                       haarCascade,
+                                       cvStorage,
+                                       1.1,
+                                       2,
+                                       CV_HAAR_DO_CANNY_PRUNING,
+                                       cvSize(100, 100));
     
     //Detect Faces and get rectangular coordinates
-    CvSeq* noses = cvHaarDetectObjects(src, //Input Image
-                                       haarCascadeNose, // Cascade to be used
-                                       cvStorage, //Temporary storage
-                                       1.1,// Size increase for features at each scan
-                                       2, //Min number of neighbouring rectangle matches
-                                       CV_HAAR_DO_CANNY_PRUNING,//Optimization
-                                       cvSize(10, 10), // Starting feature size
-                                       cvSize(50, 50)); // max feature size
+    CvSeq* noses = cvHaarDetectObjects(src,
+                                       haarCascadeNose,
+                                       cvStorage,
+                                       1.1,
+                                       2,
+                                       CV_HAAR_DO_CANNY_PRUNING,
+                                       cvSize(10, 10),
+                                       cvSize(50, 50));
     
-    //CvSeq is a linked list with tree feeatures. "faces" is a list of bounding rectangles for each face
     
     for (int i=0; i<faces->total; i++) {
-        //cvGetSeqElem is used for random access to CvSeqs
+
         CvRect *rect = (CvRect *)cvGetSeqElem(faces, i);
         [self drawOnFaceAt:rect inImage:src color:cvScalar(255,0,0,255)];
         
+        /* Draw noses found in face */
         for (int i=0; i<noses->total; i++) {
-            //cvGetSeqElem is used for random access to CvSeqs
             CvRect *rectNose = (CvRect *)cvGetSeqElem(noses, i);
             CvPoint noseCenter = [self getCenterFromRect:rectNose];
             if([self isPointInRect:rect point:noseCenter]){
@@ -161,12 +152,12 @@ static CvHaarClassifierCascade *haarCascadeNose = NULL;
     
     UIImage *newImage = [self UIImageFromIplImage:src];
     cvReleaseImage(&src);
-    //cvCvtColor(newImage, newImage, CV_HSV2RGB);
     [originalImageView setImage:newImage];
 }
 
 
-#pragma mark App Stuff
+#pragma mark App General
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -178,10 +169,7 @@ static CvHaarClassifierCascade *haarCascadeNose = NULL;
 }
 - (void)didReceiveMemoryWarning
 {
-    // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc that aren't in use.
 }
 
 #pragma mark - View lifecycle
@@ -189,11 +177,11 @@ static CvHaarClassifierCascade *haarCascadeNose = NULL;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
     baseImage=[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"p4" ofType:@"jpg"]];
     [originalImageView setImage:baseImage];
     
-    //Parsing the XML file
+    
     cvStorage = cvCreateMemStorage(0);
     NSString *resourcePath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:[NSString stringWithUTF8String:HAAR_RESOURCE]];
     NSString *resourcePathNose = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:[NSString stringWithUTF8String:HAAR_RESOURCE_NOSE]];
@@ -207,14 +195,10 @@ static CvHaarClassifierCascade *haarCascadeNose = NULL;
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    // Return YES for supported orientations
-    //return (interfaceOrientation == UIInterfaceOrientationPortrait);
     return YES;
 }
 
