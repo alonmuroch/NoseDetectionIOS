@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF1C4D6718CCF8BE009409D0 /* MainViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF1C4D6018CCF8BE009409D0 /* MainViewController.mm */; };
+		DF1C4D6818CCF8BE009409D0 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF1C4D6118CCF8BE009409D0 /* MainViewController.xib */; };
+		DF9A8EE118CE26F800073848 /* football_PNG1085.png in Resources */ = {isa = PBXBuildFile; fileRef = DF9A8EDC18CE26F800073848 /* football_PNG1085.png */; };
+		DF9A8EE218CE26F800073848 /* p1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF9A8EDD18CE26F800073848 /* p1.jpg */; };
+		DF9A8EE318CE26F800073848 /* p2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF9A8EDE18CE26F800073848 /* p2.jpg */; };
+		DF9A8EE418CE26F800073848 /* p3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF9A8EDF18CE26F800073848 /* p3.jpg */; };
+		DF9A8EE518CE26F800073848 /* p4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF9A8EE018CE26F800073848 /* p4.jpg */; };
+		DF9A8EE918CE271C00073848 /* haarcascade_frontalface_alt_tree.xml in Resources */ = {isa = PBXBuildFile; fileRef = DF9A8EE718CE271C00073848 /* haarcascade_frontalface_alt_tree.xml */; };
+		DF9A8EEA18CE271C00073848 /* haarcascade_nose.xml in Resources */ = {isa = PBXBuildFile; fileRef = DF9A8EE818CE271C00073848 /* haarcascade_nose.xml */; };
+		DF9BECAD18CCF21900A74075 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9BECAC18CCF21900A74075 /* Foundation.framework */; };
+		DF9BECAF18CCF21900A74075 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9BECAE18CCF21900A74075 /* CoreGraphics.framework */; };
+		DF9BECB118CCF21900A74075 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9BECB018CCF21900A74075 /* UIKit.framework */; };
+		DF9BECB718CCF21900A74075 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF9BECB518CCF21900A74075 /* InfoPlist.strings */; };
+		DF9BECB918CCF21900A74075 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9BECB818CCF21900A74075 /* main.m */; };
+		DF9BECBD18CCF21900A74075 /* AMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9BECBC18CCF21900A74075 /* AMAppDelegate.m */; };
+		DF9BECC518CCF21900A74075 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF9BECC418CCF21900A74075 /* Images.xcassets */; };
+		DF9BECCC18CCF21900A74075 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9BECCB18CCF21900A74075 /* XCTest.framework */; };
+		DF9BECCD18CCF21900A74075 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9BECAC18CCF21900A74075 /* Foundation.framework */; };
+		DF9BECCE18CCF21900A74075 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9BECB018CCF21900A74075 /* UIKit.framework */; };
+		DF9BECD618CCF21900A74075 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF9BECD418CCF21900A74075 /* InfoPlist.strings */; };
+		DF9BECD818CCF21900A74075 /* NoseDetectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9BECD718CCF21900A74075 /* NoseDetectionTests.m */; };
+		DF9BECE218CCF22700A74075 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9BECE118CCF22700A74075 /* opencv2.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF9BECCF18CCF21900A74075 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF9BECA118CCF21900A74075 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF9BECA818CCF21900A74075;
+			remoteInfo = NoseDetection;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DF1C4D5A18CCF8BE009409D0 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		DF1C4D6018CCF8BE009409D0 /* MainViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MainViewController.mm; sourceTree = "<group>"; };
+		DF1C4D6118CCF8BE009409D0 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		DF9A8EDC18CE26F800073848 /* football_PNG1085.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = football_PNG1085.png; sourceTree = "<group>"; };
+		DF9A8EDD18CE26F800073848 /* p1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = p1.jpg; sourceTree = "<group>"; };
+		DF9A8EDE18CE26F800073848 /* p2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = p2.jpg; sourceTree = "<group>"; };
+		DF9A8EDF18CE26F800073848 /* p3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = p3.jpg; sourceTree = "<group>"; };
+		DF9A8EE018CE26F800073848 /* p4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = p4.jpg; sourceTree = "<group>"; };
+		DF9A8EE718CE271C00073848 /* haarcascade_frontalface_alt_tree.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt_tree.xml; sourceTree = "<group>"; };
+		DF9A8EE818CE271C00073848 /* haarcascade_nose.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_nose.xml; sourceTree = "<group>"; };
+		DF9BECA918CCF21900A74075 /* NoseDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoseDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF9BECAC18CCF21900A74075 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DF9BECAE18CCF21900A74075 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DF9BECB018CCF21900A74075 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DF9BECB418CCF21900A74075 /* NoseDetection-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NoseDetection-Info.plist"; sourceTree = "<group>"; };
+		DF9BECB618CCF21900A74075 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DF9BECB818CCF21900A74075 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DF9BECBA18CCF21900A74075 /* NoseDetection-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NoseDetection-Prefix.pch"; sourceTree = "<group>"; };
+		DF9BECBB18CCF21900A74075 /* AMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMAppDelegate.h; sourceTree = "<group>"; };
+		DF9BECBC18CCF21900A74075 /* AMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMAppDelegate.m; sourceTree = "<group>"; };
+		DF9BECC418CCF21900A74075 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DF9BECCA18CCF21900A74075 /* NoseDetectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoseDetectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF9BECCB18CCF21900A74075 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DF9BECD318CCF21900A74075 /* NoseDetectionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NoseDetectionTests-Info.plist"; sourceTree = "<group>"; };
+		DF9BECD518CCF21900A74075 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DF9BECD718CCF21900A74075 /* NoseDetectionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoseDetectionTests.m; sourceTree = "<group>"; };
+		DF9BECE118CCF22700A74075 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF9BECA618CCF21900A74075 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF9BECAF18CCF21900A74075 /* CoreGraphics.framework in Frameworks */,
+				DF9BECB118CCF21900A74075 /* UIKit.framework in Frameworks */,
+				DF9BECE218CCF22700A74075 /* opencv2.framework in Frameworks */,
+				DF9BECAD18CCF21900A74075 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF9BECC718CCF21900A74075 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF9BECCC18CCF21900A74075 /* XCTest.framework in Frameworks */,
+				DF9BECCE18CCF21900A74075 /* UIKit.framework in Frameworks */,
+				DF9BECCD18CCF21900A74075 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF9A8EDB18CE26F800073848 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				DF9A8EDC18CE26F800073848 /* football_PNG1085.png */,
+				DF9A8EDD18CE26F800073848 /* p1.jpg */,
+				DF9A8EDE18CE26F800073848 /* p2.jpg */,
+				DF9A8EDF18CE26F800073848 /* p3.jpg */,
+				DF9A8EE018CE26F800073848 /* p4.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		DF9A8EE618CE271C00073848 /* haarcascade_data */ = {
+			isa = PBXGroup;
+			children = (
+				DF9A8EE718CE271C00073848 /* haarcascade_frontalface_alt_tree.xml */,
+				DF9A8EE818CE271C00073848 /* haarcascade_nose.xml */,
+			);
+			path = haarcascade_data;
+			sourceTree = "<group>";
+		};
+		DF9BECA018CCF21900A74075 = {
+			isa = PBXGroup;
+			children = (
+				DF9BECB218CCF21900A74075 /* NoseDetection */,
+				DF9BECD118CCF21900A74075 /* NoseDetectionTests */,
+				DF9BECAB18CCF21900A74075 /* Frameworks */,
+				DF9BECAA18CCF21900A74075 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF9BECAA18CCF21900A74075 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF9BECA918CCF21900A74075 /* NoseDetection.app */,
+				DF9BECCA18CCF21900A74075 /* NoseDetectionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF9BECAB18CCF21900A74075 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF9BECE118CCF22700A74075 /* opencv2.framework */,
+				DF9BECAC18CCF21900A74075 /* Foundation.framework */,
+				DF9BECAE18CCF21900A74075 /* CoreGraphics.framework */,
+				DF9BECB018CCF21900A74075 /* UIKit.framework */,
+				DF9BECCB18CCF21900A74075 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF9BECB218CCF21900A74075 /* NoseDetection */ = {
+			isa = PBXGroup;
+			children = (
+				DF9A8EE618CE271C00073848 /* haarcascade_data */,
+				DF9A8EDB18CE26F800073848 /* Images */,
+				DF1C4D5A18CCF8BE009409D0 /* MainViewController.h */,
+				DF1C4D6018CCF8BE009409D0 /* MainViewController.mm */,
+				DF1C4D6118CCF8BE009409D0 /* MainViewController.xib */,
+				DF9BECBB18CCF21900A74075 /* AMAppDelegate.h */,
+				DF9BECBC18CCF21900A74075 /* AMAppDelegate.m */,
+				DF9BECC418CCF21900A74075 /* Images.xcassets */,
+				DF9BECB318CCF21900A74075 /* Supporting Files */,
+			);
+			path = NoseDetection;
+			sourceTree = "<group>";
+		};
+		DF9BECB318CCF21900A74075 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF9BECB418CCF21900A74075 /* NoseDetection-Info.plist */,
+				DF9BECB518CCF21900A74075 /* InfoPlist.strings */,
+				DF9BECB818CCF21900A74075 /* main.m */,
+				DF9BECBA18CCF21900A74075 /* NoseDetection-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF9BECD118CCF21900A74075 /* NoseDetectionTests */ = {
+			isa = PBXGroup;
+			children = (
+				DF9BECD718CCF21900A74075 /* NoseDetectionTests.m */,
+				DF9BECD218CCF21900A74075 /* Supporting Files */,
+			);
+			path = NoseDetectionTests;
+			sourceTree = "<group>";
+		};
+		DF9BECD218CCF21900A74075 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF9BECD318CCF21900A74075 /* NoseDetectionTests-Info.plist */,
+				DF9BECD418CCF21900A74075 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF9BECA818CCF21900A74075 /* NoseDetection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF9BECDB18CCF21900A74075 /* Build configuration list for PBXNativeTarget "NoseDetection" */;
+			buildPhases = (
+				DF9BECA518CCF21900A74075 /* Sources */,
+				DF9BECA618CCF21900A74075 /* Frameworks */,
+				DF9BECA718CCF21900A74075 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NoseDetection;
+			productName = NoseDetection;
+			productReference = DF9BECA918CCF21900A74075 /* NoseDetection.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DF9BECC918CCF21900A74075 /* NoseDetectionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF9BECDE18CCF21900A74075 /* Build configuration list for PBXNativeTarget "NoseDetectionTests" */;
+			buildPhases = (
+				DF9BECC618CCF21900A74075 /* Sources */,
+				DF9BECC718CCF21900A74075 /* Frameworks */,
+				DF9BECC818CCF21900A74075 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF9BECD018CCF21900A74075 /* PBXTargetDependency */,
+			);
+			name = NoseDetectionTests;
+			productName = NoseDetectionTests;
+			productReference = DF9BECCA18CCF21900A74075 /* NoseDetectionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF9BECA118CCF21900A74075 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AM;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Alon;
+				TargetAttributes = {
+					DF9BECC918CCF21900A74075 = {
+						TestTargetID = DF9BECA818CCF21900A74075;
+					};
+				};
+			};
+			buildConfigurationList = DF9BECA418CCF21900A74075 /* Build configuration list for PBXProject "NoseDetection" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF9BECA018CCF21900A74075;
+			productRefGroup = DF9BECAA18CCF21900A74075 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF9BECA818CCF21900A74075 /* NoseDetection */,
+				DF9BECC918CCF21900A74075 /* NoseDetectionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF9BECA718CCF21900A74075 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF9A8EE918CE271C00073848 /* haarcascade_frontalface_alt_tree.xml in Resources */,
+				DF9A8EE518CE26F800073848 /* p4.jpg in Resources */,
+				DF9A8EE318CE26F800073848 /* p2.jpg in Resources */,
+				DF9BECC518CCF21900A74075 /* Images.xcassets in Resources */,
+				DF9BECB718CCF21900A74075 /* InfoPlist.strings in Resources */,
+				DF9A8EE118CE26F800073848 /* football_PNG1085.png in Resources */,
+				DF9A8EEA18CE271C00073848 /* haarcascade_nose.xml in Resources */,
+				DF9A8EE418CE26F800073848 /* p3.jpg in Resources */,
+				DF1C4D6818CCF8BE009409D0 /* MainViewController.xib in Resources */,
+				DF9A8EE218CE26F800073848 /* p1.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF9BECC818CCF21900A74075 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF9BECD618CCF21900A74075 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF9BECA518CCF21900A74075 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF1C4D6718CCF8BE009409D0 /* MainViewController.mm in Sources */,
+				DF9BECBD18CCF21900A74075 /* AMAppDelegate.m in Sources */,
+				DF9BECB918CCF21900A74075 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF9BECC618CCF21900A74075 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF9BECD818CCF21900A74075 /* NoseDetectionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF9BECD018CCF21900A74075 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF9BECA818CCF21900A74075 /* NoseDetection */;
+			targetProxy = DF9BECCF18CCF21900A74075 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DF9BECB518CCF21900A74075 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF9BECB618CCF21900A74075 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DF9BECD418CCF21900A74075 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF9BECD518CCF21900A74075 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF9BECD918CCF21900A74075 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DF9BECDA18CCF21900A74075 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF9BECDC18CCF21900A74075 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/alon/Documents/Xcode\\ Projects/NoseDetection",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NoseDetection/NoseDetection-Prefix.pch";
+				INFOPLIST_FILE = "NoseDetection/NoseDetection-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DF9BECDD18CCF21900A74075 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/alon/Documents/Xcode\\ Projects/NoseDetection",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NoseDetection/NoseDetection-Prefix.pch";
+				INFOPLIST_FILE = "NoseDetection/NoseDetection-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DF9BECDF18CCF21900A74075 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NoseDetection.app/NoseDetection";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NoseDetection/NoseDetection-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NoseDetectionTests/NoseDetectionTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DF9BECE018CCF21900A74075 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NoseDetection.app/NoseDetection";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NoseDetection/NoseDetection-Prefix.pch";
+				INFOPLIST_FILE = "NoseDetectionTests/NoseDetectionTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF9BECA418CCF21900A74075 /* Build configuration list for PBXProject "NoseDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF9BECD918CCF21900A74075 /* Debug */,
+				DF9BECDA18CCF21900A74075 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF9BECDB18CCF21900A74075 /* Build configuration list for PBXNativeTarget "NoseDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF9BECDC18CCF21900A74075 /* Debug */,
+				DF9BECDD18CCF21900A74075 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF9BECDE18CCF21900A74075 /* Build configuration list for PBXNativeTarget "NoseDetectionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF9BECDF18CCF21900A74075 /* Debug */,
+				DF9BECE018CCF21900A74075 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF9BECA118CCF21900A74075 /* Project object */;
+}
